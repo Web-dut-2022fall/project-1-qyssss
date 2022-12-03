@@ -28,6 +28,8 @@ textarea {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     background-color: #f0f0f0;
     height: 100vh;
     padding: 20px;
@@ -35,4 +37,26 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+a {
+    margin-top: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+}
+
+input {
+    outline: none;
 }

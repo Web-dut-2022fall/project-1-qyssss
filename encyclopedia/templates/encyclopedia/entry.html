@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    {{ entry|safe }}
+    <hr>
+    <form action="{% url 'edit' title %}" method="get">
+        <input type="submit" value="Edit"/>
+    </form>
+    <br>
+    <a href="{% url 'index' %}">Return to homepage.</a>
+{% endblock %}
